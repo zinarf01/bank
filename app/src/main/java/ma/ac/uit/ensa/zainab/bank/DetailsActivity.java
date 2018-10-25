@@ -62,6 +62,7 @@ public class DetailsActivity extends AppCompatActivity {
 
     @OnClick(R.id.tel)
     public void onListOperationClicked(){
+
         Uri tel = Uri.parse("tel:212613511908");
         Intent call = new Intent(Intent.ACTION_DIAL, tel);
         startActivity(call);
